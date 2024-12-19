@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noss & Windisch Rechtsanwälte OG</title>
+        
+        <!-- Nur einmal Bootstrap (Version 5.3.0) einbinden -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Eigene CSS-Datei erst nach Bootstrap laden -->
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+<body>
+    
+<!-- Navbar -->
+<header>
+<nav class="navbar navbar-expand-lg fw-bold sticky-top" style="background-color: #4B2E2E;">
+    <div class="container">
+        <a class="navbar-brand text-white" href="index.html">Noss & Windisch</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Unterseiten/uberuns.html">Über uns</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link text-white dropdown-toggle"
+                        href="#kernkompetenzen"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Fachgebiete
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#arbeitsrechtModal">Arbeitsrecht</a></li>
+                        <li><a class="dropdown-item" href="#grenzarbeitenModal">Grenzüberschreitendes Arbeiten</a></li>
+                        <li><a class="dropdown-item" href="#datenschutzModal">Datenschutz</a></li>
+                        <li><a class="dropdown-item" href="#gesellschaftsrechtModal">Gesellschaftsrecht</a></li>
+                        <li><a class="dropdown-item" href="#gewerberechtModal">Gewerberecht</a></li>
+                        <li><a class="dropdown-item" href="#mietrechtModal">Mietrecht</a></li>
+                        <li><a class="dropdown-item" href="#maklerrechtModal">Maklerrecht</a></li>
+                        <li><a class="dropdown-item" href="#unternehmensrechtModal">Unternehmensrecht</a></li>
+                        <li><a class="dropdown-item" href="#vertragsgestaltungModal">Vertragsgestaltung</a></li>
+                        <li><a class="dropdown-item" href="#agbModal">AGB Erstellung</a></li>
+                        <li><a class="dropdown-item" href="#zivilrechtModal">Zivilrecht</a></li>
+                        <li><a class="dropdown-item" href="#prozessModal">Prozessführung</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Unterseiten/Team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#whistleblowing">Hinweisgeberplattform</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href=>Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+</header>
+<button id="scrollToTopBtn" class="btn btn-custom" style="display: none; position: fixed; bottom: 20px; right: 20px;">Top</button>
+
+    <!-- Carousel Header -->
+    <div class="carousel-header">
+        <h1>Noss & Windisch Rechtsanwälte OG</h1>
+        <div class="carousel-header-overlay"></div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Bilder/C1.avif" class="d-block w-100" alt="Bild 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Bilder/C2.avif" class="d-block w-100" alt="Bild 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Bilder/C3.avif" class="d-block w-100" alt="Bild 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="Bilder/C4.avif" class="d-block w-100" alt="Bild 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Whistleblowing Section -->
+    <section class="container my-5 content-section">
+        <div class="text-center">
+            <h2 class="section-title">Whistleblowing</h2>
+            <p class="lead">
+                Wir bieten zu günstigen Konditionen eine vollkommen anonyme Hinweisgeberplattform an, 
+                mit welcher Sie einfach und unkompliziert die gesetzlichen Vorgaben erfüllen können.
+            </p>
+            <a href="Unterseiten/uberuns.html" class="btn btn-custom">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <!-- Kernkompetenzen -->
+      <section class="kernkompetenzen py-5 bg-light content-section">
+          <div class="container">
+              <h2 class="text-center mb-5">Kernkompetenzen</h2>
+              <div class="row g-4">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Arbeitsrecht</h5>
+                              <p class="card-text">Beratung in allen Fragen des Arbeitsrechts.</p>
+                              <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#arbeitsrechtModal">Mehr erfahren</a>
+
+                          </div>
+                      </div>
+                  </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Grenzüberschreitendes Arbeiten</h5>
+                            <p class="card-text">Lösungen für internationale Arbeitskontexte.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#grenzarbeitenModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Datenschutz</h5>
+                            <p class="card-text">Konforme Datenschutzlösungen für Unternehmen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#datenschutzModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gesellschaftsrecht</h5>
+                            <p class="card-text">Rechtliche Beratung für Unternehmensgründungen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#gesellschaftsrechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gewerberecht</h5>
+                            <p class="card-text">Umfassende Beratung für Gewerbetreibende.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#gewerberechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Maklerrecht</h5>
+                            <p class="card-text">Beratung und Lösungen für Maklerrecht.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#mietrechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Liegenschafts-, Wohn- und Mietrecht</h5>
+                            <p class="card-text">Rechtliche Unterstützung bei Immobilienfragen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#maklerrechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Unternehmensrecht / Wirtschaftsrecht</h5>
+                            <p class="card-text">Ganzheitliche Beratung für Unternehmen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#unternehmensrechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Vertragsgestaltung</h5>
+                            <p class="card-text">Professionelle Erstellung und Prüfung von Verträgen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#vertragsgestaltungModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Erstellung Allgemeiner Geschäftsbedingungen</h5>
+                            <p class="card-text">AGB-Maßanfertigungen für Unternehmen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#agbModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Allgemeines Zivilrecht</h5>
+                            <p class="card-text">Unterstützung bei zivilrechtlichen Fragen.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#zivilrechtModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Zivilprozesse / Prozessführung / Forderungsein treibung</h5>
+                            <p class="card-text">Effiziente Prozessführung.</p>
+                            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#prozessModal">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Modal -->
+ <!-- arbeitsrechtModal -->
+<div class="modal fade" id="arbeitsrechtModal" tabindex="-1" aria-labelledby="arbeitsrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="arbeitsrechtModalLabel">Arbeitsrecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Das Arbeitsrecht betrifft Arbeitgeber und Arbeitnehmer gleichermaßen und spielt sowohl im geschäftlichen als auch privaten Umfeld eine zentrale Rolle. 
+                </p>
+                <ul>
+                    <li>Erstellung und Prüfung von Arbeitsverträgen</li>
+                    <li>Optimierung von Entgeltvereinbarungen</li>
+                    <li>Unterstützung bei Arbeitszeitmodellen</li>
+                    <li>Rechtliche Vertretung bei Streitigkeiten</li>
+                </ul>
+                <p>
+                    Mit unserer langjährigen Erfahrung bieten wir kompetente Beratung und effiziente Lösungen für individuelle Anliegen.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- grenzarbeitenModal -->
+<div class="modal fade" id="grenzarbeitenModal" tabindex="-1" aria-labelledby="grenzarbeitenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="grenzarbeitenModalLabel">Grenzüberschreitendes Arbeiten / Entsendungen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Die zunehmende Internationalisierung der Wirtschaft erfordert den verstärkten Einsatz von Personal über Ländergrenzen hinweg. 
+                    Dabei können Personalentsendungen Unternehmen dabei unterstützen, den Herausforderungen der Globalisierung zu begegnen 
+                    und Chancen optimal zu nutzen.
+                </p>
+                <ul>
+                    <li>Beratung zu arbeitsrechtlichen Vereinbarungen</li>
+                    <li>Unterstützung bei Personalentsendungen und Arbeitskräfteüberlassung</li>
+                    <li>Einhaltung des Lohn- und Sozialdumping-Bekämpfungsgesetzes</li>
+                    <li>Berücksichtigung des Ausländerbeschäftigungsgesetzes</li>
+                    <li>Rechtskonformität im Fremden- und Gewerberecht</li>
+                </ul>
+                <p>
+                    Mit langjähriger Erfahrung beraten wir namhafte internationale Unternehmen und bieten maßgeschneiderte Lösungen 
+                    für grenzüberschreitende Arbeitskontexte.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- datenschutzModal -->
+<div class="modal fade" id="datenschutzModal" tabindex="-1" aria-labelledby="datenschutzModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="datenschutzModalLabel">Datenschutz / Whistleblowing</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Das Datenschutzrecht hat in den letzten Jahren enorm an Bedeutung gewonnen. 
+                    Wir beraten umfassend zu allen Fragen des Datenschutzrechts und unterstützen Sie bei der Umsetzung der EU-Datenschutzgrundverordnung (DSGVO).
+                </p>
+                <ul>
+                    <li>Analyse und Anpassung bestehender Datenschutzmaßnahmen</li>
+                    <li>Beratung zur EU-Whistleblower-Richtlinie</li>
+                    <li>Konzeption und Implementierung interner Meldesysteme</li>
+                </ul>
+                <p>
+                    Mit unserer Erfahrung sorgen wir dafür, dass Ihr Unternehmen rechtlich abgesichert ist und die aktuellen Vorgaben effizient erfüllt.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- gesellschaftsrechtModal -->
+<div class="modal fade" id="gesellschaftsrechtModal" tabindex="-1" aria-labelledby="gesellschaftsrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gesellschaftsrechtModalLabel">Gesellschaftsrecht / Umgründungen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Wir unterstützen Unternehmen bei der Gestaltung und Strukturierung gesellschaftsrechtlicher Verhältnisse, insbesondere bei:
+                </p>
+                <ul>
+                    <li>Gründung, Veräußerung und Umstrukturierung von Gesellschaften</li>
+                    <li>Erstellung maßgeschneiderter Gesellschaftsverträge</li>
+                    <li>Begleitung von gerichtlichen Auseinandersetzungen im Gesellschafterkreis</li>
+                </ul>
+                <p>
+                    Zu unseren Mandanten zählen kleine und mittelständische Unternehmen ebenso wie große Konzerne und Unternehmensgruppen.
+                </p>
+                <p>
+                    Unsere langjährige Erfahrung ermöglicht es uns, Lösungen zu entwickeln, die optimal auf Ihre Bedürfnisse abgestimmt sind.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- gewerberechtModal -->
+<div class="modal fade" id="gewerberechtModal" tabindex="-1" aria-labelledby="gewerberechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gewerberechtModalLabel">Gewerberecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Eine Gewerbeberechtigung ist essenziell für die gewerbsmäßige Ausübung einer Tätigkeit in Österreich. 
+                    Wir unterstützen Sie bei der Anmeldung und Ausübung Ihres Gewerbes sowie bei allen rechtlichen Pflichten.
+                </p>
+                <ul>
+                    <li>Beratung zur Auswahl des passenden Gewerbes</li>
+                    <li>Unterstützung bei der Gewerbeanmeldung</li>
+                    <li>Fragen zur Bestellung und Haftung des Geschäftsführers</li>
+                    <li>Beratung bei gewerberechtlichen Auswirkungen von Unternehmensumgründungen</li>
+                </ul>
+                <p>
+                    Mit unserer Expertise begleiten wir Sie durch alle Schritte und sorgen dafür, dass Sie rechtlich abgesichert sind.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mietrechtModal -->
+<div class="modal fade" id="mietrechtModal" tabindex="-1" aria-labelledby="mietrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mietrechtModalLabel">Liegenschafts-, Wohn- und Mietrecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Wir beraten und unterstützen Unternehmen sowie Privatpersonen in allen Fragen des Liegenschafts-, Wohn- und Mietrechts:
+                </p>
+                <ul>
+                    <li>Erstellung und Überprüfung von Liegenschaftskaufverträgen und Mietverträgen</li>
+                    <li>Beratung zur Zulässigkeit von Mietzinsminderungen</li>
+                    <li>Unterstützung bei Kündigung von Mietverträgen</li>
+                    <li>Klärung von Reparatur- und Kostentragungsfragen</li>
+                    <li>Begleitung bei Mietzins- und Räumungsklagen</li>
+                </ul>
+                <p>
+                    Mit unserer Expertise stehen wir Ihnen bei allen rechtlichen Herausforderungen im Miet- und Vermietungsbereich zur Seite.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- maklerrechtModal -->
+<div class="modal fade" id="maklerrechtModal" tabindex="-1" aria-labelledby="maklerrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="maklerrechtModalLabel">Maklerrecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Als Expertin für Maklerrecht steht Ihnen insbesondere Dr. Vera Noss, LL.M., zur Verfügung. 
+                    Mit umfangreichem Fachwissen und als Autorin eines Praxishandbuches unterstützt Dr. Noss Sie in allen Fragen des Maklerrechts, einschließlich:
+                </p>
+                <ul>
+                    <li>Immobilien-, Handels- und Versicherungsmaklerrecht</li>
+                    <li>Beratung für Personalkreditvermittler</li>
+                    <li>Themen wie Maklerprovisionen und deren Durchsetzung oder Abwehr</li>
+                </ul>
+                <p>
+                    Dank fundierter Erfahrung und umfassender Kenntnis der gesetzlichen Bestimmungen bietet Dr. Noss rechtssichere Lösungen für Ihre Anliegen.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- unternehmensrechtModal -->
+<div class="modal fade" id="unternehmensrechtModal" tabindex="-1" aria-labelledby="unternehmensrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="unternehmensrechtModalLabel">Unternehmensrecht / Wirtschaftsrecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    NOSS & WINDISCH Rechtsanwälte beraten und betreuen Unternehmen jeder Größe. Egal, ob es sich um:
+                </p>
+                <ul>
+                    <li>ein kleines Familienunternehmen</li>
+                    <li>oder einen internationalen Konzern handelt</li>
+                </ul>
+                <p>
+                    Wir unterstützen Sie in allen Phasen Ihres Unternehmens, einschließlich:
+                </p>
+                <ul>
+                    <li>Gründung und Strukturierung des Unternehmens</li>
+                    <li>Betreuung während der operativen Tätigkeit</li>
+                    <li>Beratung zu rechtlichen Belangen des Wirtschaftsrechts</li>
+                </ul>
+                <p>
+                    Mit unserer Expertise bieten wir Ihnen ganzheitliche rechtliche Lösungen für eine sichere und erfolgreiche Unternehmensführung.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- vertragsgestaltungModal -->
+<div class="modal fade" id="vertragsgestaltungModal" tabindex="-1" aria-labelledby="vertragsgestaltungModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="vertragsgestaltungModalLabel">Vertragsgestaltung</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    NOSS & WINDISCH Rechtsanwälte unterstützen Sie umfassend bei der Erstellung und Überprüfung unterschiedlichster Verträge:
+                </p>
+                <ul>
+                    <li>Kauf- und Werkverträge</li>
+                    <li>Liegenschaftskaufverträge</li>
+                    <li>Gesellschaftsverträge</li>
+                    <li>Unternehmenskaufverträge und damit verbundene Verhandlungen</li>
+                </ul>
+                <p>
+                    <strong>Spezialisierungen:</strong> 
+                    Ein besonderer Fokus liegt auf der Beratung und Vertretung von Ärzten bei Übernahmen von Ordinationen und Kassenverträgen. Dabei werden kassenspezifische Vorgaben berücksichtigt, um Ihre Interessen optimal zu schützen.
+                </p>
+                <p>
+                    Unsere Expertise umfasst auch die Vertragsgestaltung für Freiberufler, insbesondere Ärzte, unter Berücksichtigung besonderer rechtlicher Anforderungen.
+                </p>
+                <p>
+                    Verträge sind komplex und facettenreich. Wir legen besonderen Wert auf:
+                </p>
+                <ul>
+                    <li>Sorgfältige und präzise Formulierungen</li>
+                    <li>Vorbeugung von Streitigkeiten</li>
+                </ul>
+                <p>
+                    Sollten Streitigkeiten dennoch auftreten, setzen wir Ihr Recht entschlossen und kompetent durch.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- agbModal -->
+<div class="modal fade" id="agbModal" tabindex="-1" aria-labelledby="agbModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="agbModalLabel">Erstellung Allgemeiner Geschäftsbedingungen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Möchten Sie einen Onlineshop starten und benötigen individuell gestaltete Allgemeine Geschäftsbedingungen (AGB)?
+                    <strong>NOSS & WINDISCH Rechtsanwälte</strong> sind spezialisiert auf die Erstellung maßgeschneiderter AGB für:
+                </p>
+                <ul>
+                    <li>Internetportale</li>
+                    <li>Online-Dienste</li>
+                    <li>E-Commerce-Plattformen</li>
+                </ul>
+                <p>
+                    Gemeinsam klären wir die grundlegenden Fragen einer rechtskonformen Ausgestaltung Ihrer AGB und erarbeiten diese nach Ihren Bedürfnissen. 
+                </p>
+                <p>
+                    <strong>Unsere Dienstleistungen umfassen:</strong>
+                </p>
+                <ul>
+                    <li>Erstellung neuer, rechtskonformer AGB</li>
+                    <li>Anpassung bestehender AGB an österreichisches Recht</li>
+                    <li>Sicherstellung der Wahrung bestehender Vertragsbedingungen</li>
+                </ul>
+                <p>
+                    Besonders bei internationalen Unternehmen achten wir auf den größtmöglichen rechtlichen Schutz und die Anpassung an lokale Vorschriften.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@kanzlei.de" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- zivilrechtModal -->
+<div class="modal fade" id="zivilrechtModal" tabindex="-1" aria-labelledby="zivilrechtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="zivilrechtModalLabel">Allgemeines Zivilrecht</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Im Bereich des allgemeinen Zivilrechts beraten wir Sie kompetent und umfassend – von 
+                    <strong>Nachbarschaftsstreitigkeiten</strong> über die <strong>Rückabwicklung eines Kaufvertrages</strong> bis hin zu 
+                    <strong>Schmerzensgeldforderungen</strong> aufgrund eines Verkehrsunfalls.
+                </p>
+                <p>
+                    Unser Ziel ist es, außergerichtliche Lösungen zu finden, da dies häufig schneller und kosteneffizienter ist. Sollte jedoch eine 
+                    gerichtliche Auseinandersetzung unvermeidlich sein, setzen wir uns engagiert für Ihr Recht ein.
+                </p>
+                <p>
+                    <strong>Unsere Leistungen umfassen:</strong>
+                </p>
+                <ul>
+                    <li>Beratung und Unterstützung bei rechtlichen Streitigkeiten</li>
+                    <li>Erarbeitung außergerichtlicher Lösungen</li>
+                    <li>Vertretung vor Gericht bei komplexen Zivilrechtsfällen</li>
+                    <li>Klärung der Anwaltskostenübernahme durch Rechtsschutzversicherungen</li>
+                </ul>
+                <p>
+                    Vertrauen Sie auf unsere langjährige Erfahrung, um Ihre rechtlichen Anliegen effektiv und zielorientiert zu bearbeiten.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@noss-windisch.at" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- prozessModal -->
+<div class="modal fade" id="prozessModal" tabindex="-1" aria-labelledby="prozessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="prozessModalLabel">Zivilprozesse / Prozessführung / Forderungseintreibung</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Ist ein Prozess unumgänglich, vertreten wir Sie in <strong>zivil- und wirtschaftsrechtlichen Angelegenheiten</strong>. Dabei legen wir besonderen Wert auf eine strategische Prozessvorbereitung, weshalb wir den zugrunde liegenden Sachverhalt gemeinsam mit Ihnen detailliert besprechen und die vorhandenen Beweismittel erörtern.
+                </p>
+                <p>
+                    Unsere Leistungen umfassen:
+                </p>
+                <ul>
+                    <li>Umfassende Prozessvorbereitung</li>
+                    <li>Strategische Beratung und Unterstützung bei Verhandlungen</li>
+                    <li>Professionelles und empathisches Mandantenmanagement</li>
+                    <li>Durchführung von Forderungseintreibungen gegen zahlungsunwillige Schuldner</li>
+                </ul>
+                <p>
+                    Von der außergerichtlichen Aufforderung bis zur Einleitung von Exekutionsschritten stehen wir an Ihrer Seite, um Ihr Recht effektiv durchzusetzen. Vertrauen Sie auf unsere Erfahrung, um Mandantenforderungen erfolgreich einzutreiben – unabhängig von Branche oder Unternehmensgröße.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Schließen</button>
+                <a href="mailto:info@noss-windisch.at" class="btn btn-custom">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contactModal -->
+
+
+
+    <!-- Standortbereich -->
+    <section class="py-5 bg-light">
+      <div class="container">
+          <h2 class="section-title">Unser Standort</h2>
+          <div class="row align-items-center">
+              <!-- Google Maps Karte -->
+              <div class="col-md-6 mb-4 mb-md-0">
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.639216848218!2d16.35624361570521!3d48.220423479230!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07c78c7a84c3%3A0x123456789abcdef!2sPorzellangasse%2043%2C%201090%20Wien!5e0!3m2!1sde!2sat!4v1234567890123"
+                      width="100%"
+                      height="350"
+                      style="border:0; border-radius: 8px;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+              </div>
+
+
+
+
+
+
+
+
+
+              
+              <!-- Kontaktdaten -->
+              <div class="col-md-6">
+                  <h4 class="fw-bold mb-3">NOSS & WINDISCH Rechtsanwälte OG</h4>
+                  <p><strong>Adresse:</strong><br> Porzellangasse 43/3, 1090 Wien, Österreich</p>
+                  <p><strong>Telefon:</strong><br> <a href="tel:+4313190222" class="text-dark">01/319 02 22</a></p>
+                  <p><strong>E-Mail:</strong><br> <a href="mailto:office@noss-recht.at" class="text-dark">office@noss-recht.at</a></p>
+                  <a href="https://goo.gl/maps/xyz" target="_blank" class="btn btn-custom mt-3">Route planen</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NOSS & WINDISCH Rechtsanwälte OG. Alle Rechte vorbehalten.</p>
+            <p><a href="#" class="text-white">Impressum</a> | <a href="#" class="text-white">Datenschutz</a></p>
+        </div>
+    </footer>
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

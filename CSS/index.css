@@ -1,0 +1,486 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar-custom {
+    background-color: #4B2E2E;
+}
+.navbar-custom .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-custom .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+.navbar-custom .nav-link:hover {
+    color: #ddd;
+}
+.navbar-custom .dropdown-menu {
+    background-color: #4B2E2E;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.navbar-custom .dropdown-item {
+    color: white;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.navbar-custom .dropdown-item:hover {
+    background-color: #3A1F1F;
+    color: #ddd;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.content-section .btn-custom:hover {
+    background-color: #3A1F1F;
+    opacity: 0.9;
+}
+        .content-section .btn-custom {
+            background-color: #4B2E2E;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.hero-section {
+    position: relative;
+    height: 35vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-ueber-uns .hero-section {
+    background: url('../Bilder/uber1.avif') no-repeat center center/cover;
+}
+
+.hero-section .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.content-section {
+    padding: 3rem 1.5rem;
+}
+.content-section h2 {
+    text-align: center;
+    color: #4B2E2E;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.content-section .row {
+    align-items: center;
+}
+.content-section p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+    
+}
+
+.image-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.form-section {
+    background-color: #f8f9fa;
+    padding: 3rem 1.5rem;
+}
+.form-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4B2E2E;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-section .form-control {
+    border-radius: 5px;
+}
+.form-section .btn-submit, .btn-primary {
+    background-color: #4B2E2E;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border-color: #4B2E2E;
+    transition: background-color 0.3s;
+}
+.form-section .btn-submit:hover, .btn-primary:hover {
+    background-color: #3A1F1F;
+}
+.kernkompetenzen .card {
+    display: flex; /* Flexbox für einfache Ausrichtung */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    justify-content: space-between; /* Inhalte gleichmäßig verteilen */
+    align-items: center; /* Inhalte zentrieren */
+    height: auto; /* Automatische Höhe */
+    width: 100%; /* Volle Breite innerhalb des Grid-Bereichs */
+    padding: 1rem; /* Innenabstand */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation für Hover-Effekt */
+    background: #fff; /* Hintergrundfarbe */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-sizing: border-box; /* Box-Modell */
+    text-align: center; /* Zentrierter Text */
+    overflow: hidden; /* Verhindert Überlaufen von Bildern oder anderen Elementen */
+}
+
+.kernkompetenzen .card h3 {
+    font-size: 1rem; /* Textgröße */
+    margin-bottom: 0.5rem; /* Abstand nach unten */
+    word-wrap: break-word; /* Längeren Text umbrechen */
+    white-space: normal; /* Erlaubt Umbrüche */
+}
+
+.kernkompetenzen .card p {
+    font-size: 0.9rem; /* Kleinere Textgröße für besseren Platz */
+    margin-bottom: 1rem; /* Abstand nach unten */
+    line-height: 1.4; /* Angenehmer Zeilenabstand */
+    word-wrap: break-word; /* Textumbrüche aktivieren */
+    white-space: normal; /* Erlaubt Umbrüche */
+}
+
+.kernkompetenzen .card button {
+    padding: 0.8rem 1.5rem; /* Knopfgröße */
+    background-color: #5a2a2a; /* Knopffarbe */
+    color: white; /* Textfarbe */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Abgerundete Kanten */
+    cursor: pointer; /* Zeigt einen Zeiger an */
+    transition: background 0.3s ease;
+}
+
+.kernkompetenzen .card button:hover {
+    background-color: #402020; /* Dunklere Knopffarbe bei Hover */
+}
+
+@media (max-width: 600px) {
+    .kernkompetenzen .card {
+        padding: 0.8rem; /* Weniger Innenabstand bei kleineren Geräten */
+    }
+
+    .kernkompetenzen .card h3 {
+        font-size: 0.9rem; /* Kleinere Überschrift */
+    }
+
+    .kernkompetenzen .card p {
+        font-size: 0.8rem; /* Kleinere Schriftgröße */
+    }
+}
+     
+
+
+/* Carousel Section */
+.carousel-header {
+            position: relative;
+        }
+
+        .carousel-header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+            text-align: center;
+        }
+
+        .carousel-fade .carousel-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .carousel-fade .carousel-item.active {
+            opacity: 1;
+            position: relative;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        .carousel-header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 5;
+        }
+footer {
+    background-color: #4B2E2E;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    bottom: 0; /* Positioniert den Footer am unteren Rand */
+    left: 0;
+    width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+}
+footer p {
+    margin: 0;
+}
+
+
+.btn-custom {
+    background-color: #4B2E2E;
+    border-color: #4B2E2E;
+    color: #fff;
+  }
+
+  .modal-header {
+    background-color: #4B2E2E;
+    color: white;
+}
+
+.modal-footer .btn-custom {
+    background-color: #4B2E2E;
+    border-color: #4B2E2E;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-custom:hover {
+    background-color: #3A1F1F;
+}
+
+
+/* Allgemeines Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4B2E2E;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: relative; /* Für pseudo-relative Platzierung */
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: white;
+}
+
+header nav ul li a.active::after,
+header nav ul li a:hover::after {
+    content: ""; /* Fügt eine visuelle Linie hinzu */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Linie am unteren Rand */
+    width: 100%;
+    height: 2px; /* Höhe der Linie */
+    background-color: white; /* Farbe der Linie */
+}
+
+
+/* Team Member Section */
+.team-member {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #4B2E2E;
+}
+
+.profile-info .subtitle {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.profile-details h3 {
+    margin: 1rem 0 0.5rem;
+    color: #4B2E2E;
+    font-size: 1.2rem;
+}
+
+.profile-details p,
+.profile-details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-details ul li {
+    margin: 0.2rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #4B2E2E;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+
+.form_modal .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #4B2E2E;
+}
+
+/* Formular-Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4B2E2E;
+    box-shadow: 0 0 5px rgba(75, 46, 46, 0.5);
+}
+
+.submit-btn {
+    background-color: #4B2E2E;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #371c1c;
+}
+
+/* Kontaktformular-Button */
+.contact-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #4B2E2E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #371c1c;
+}
